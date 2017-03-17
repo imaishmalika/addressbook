@@ -7,6 +7,19 @@
     <packaging>pom</packaging>
     <name>Address Book Edureka Demo</name>
     <url>https://github.com/SeshagiriSriram/addressbook</url>
+<distributionManagement>
+		<snapshotRepository>
+			<id>${env.ART_ID}</id>
+			<name>${env.ART_NAME}</name>
+			<url>${env.ART_URL}</url>
+		</snapshotRepository>
+		<repository>
+		<id>${env.REL_ART_ID}</id>
+			<name>${env.REL_ART_NAME}</name>
+			<url>${env.REL_ART_URL}</url>
+		</repository>
+
+	</distributionManagement>
     <properties>
         <build.number>SNAPSHOT</build.number>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
