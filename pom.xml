@@ -3,10 +3,19 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.edurekademo.tutorial</groupId>
     <artifactId>addressbook</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>2.0.6</version>
     <packaging>pom</packaging>
     <name>Address Book Edureka Demo</name>
     <url>https://github.com/SeshagiriSriram/addressbook</url>
+<distributionManagement>
+	
+		<repository>
+		<id>release</id>
+			<name>QA</name>
+			<url>http://52.173.75.126:8080/nexus/content/repositories/release</url>
+		</repository>
+
+	</distributionManagement>
     <properties>
         <build.number>SNAPSHOT</build.number>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
